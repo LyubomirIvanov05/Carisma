@@ -1,0 +1,75 @@
+/* Main page */
+.hero-page{
+    background-color: white;
+    height: 100vh;
+    padding: 2rem;
+}
+
+
+
+/* Hero description */
+.hero-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightgrey;
+    height: 80%;
+}
+
+.hero-desc h1, .hero-desc p{
+    text-align: center;
+    color: black;
+}
+
+.hero-desc h1{
+    font-size: 64px;
+    margin: 0;
+}
+.hero-desc p{
+    margin: 0;
+}
+
+
+.hero-desc .input-container {
+    position: relative;
+    margin-top: 48px;
+}
+
+.hero-desc .input-container input{
+    width: 350px;
+    border-radius: 24px;
+    border: none;
+    padding: 0.75rem 0.5rem;
+    outline: none;
+}
+
+.hero-desc .input-container i{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+
+
+
+
+/* Navigation */
+.navigation{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    background-color: lightgray;
+    padding: 1rem 0.5rem;
+}
+
+.navigation li{
+    color: black;
+}
+
+.navigation .buttons{
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
