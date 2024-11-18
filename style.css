@@ -154,14 +154,16 @@ p,h1,h2,h3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 12px;
 }
+
 
 .main-page .buttons button{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 16px;
     gap: 16px;
     background: transparent;
     backdrop-filter: blur(5px);
@@ -169,6 +171,9 @@ p,h1,h2,h3{
     border-radius: 10px;
     color: white;
     font-size: 16px;
+    border: 1px solid #f8f8f8;
+    width: 150px;
+    height: 125px;
 }
 
 .main-page .buttons button:hover{
@@ -180,7 +185,7 @@ p,h1,h2,h3{
 }
 
 .main-page .buttons i{
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .fa-solid.fa-car {
@@ -362,5 +367,58 @@ transform: rotate(45deg);
 }
 
 .finance-calc .finance button:hover{
+    cursor: pointer;
+}
+
+
+
+/* Signing Up */
+.signing-up{
+    padding: 1rem 12rem;
+}
+.signing-up h3{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.signing-up .signing-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 16px;
+}
+
+.signing-cards-container p{
+    color: white;
+    font-size: 24px;
+}
+.signing-cards-container .signing-card{
+    text-align: center;
+}
+
+.signing-card img{
+    width: 200px;
+    height: auto;
+}
+
+.signing-up button{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 16px 48px;
+    border-radius: 28px;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.signing-up button a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.signing-up button:hover{
     cursor: pointer;
 }
