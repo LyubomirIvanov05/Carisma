@@ -1,0 +1,13 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.card{
+    background-color: blue;
+
+}
+.card img{
+    width: 300px;
+    height: auto;
+}
