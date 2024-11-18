@@ -1,13 +1,10 @@
 body{
     font-family: "Roboto", sans-serif;
     margin: 0;
-    background-color: black;
 }
 
 /* Navigation Bar */
 .navigation{
-    z-index: 1000;
-    top: 0;
     position: sticky;
     background-color:  black;
     display: flex;
@@ -78,10 +75,6 @@ body{
     color: #333333;
 }
 
-.user .nav-divider{
-    width: 2px;
-    background-color: white;
-}
 /* Main Page */
 .main-page{
     position: relative;
@@ -106,6 +99,9 @@ body{
     color: white;
     padding-bottom: 16px;
     margin: 0;
+}
+
+.main-desc h1{
     font-size: 42px;
 }
 
@@ -188,27 +184,4 @@ body{
 }
 .fa-solid.fa-car-battery{
     color: #06aeaa;
-}
-
-
-
-/* Description */
-.description{
-    background-color: black;
-    padding-top: 32px;
-}
-
-.description h2, .description p, .description h3{ 
-    color: white;
-}
-
-.description h2{
-    text-align: center;
-    margin: 0;
-    font-size: 36px;
-}
-
-.description .cards-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
