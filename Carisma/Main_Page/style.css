@@ -1,7 +1,10 @@
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Cabin", sans-serif;
     margin: 0;
     background-color: black;
+}
+p,h1,h2,h3{
+    font-family: "Cabin", sans-serif;
 }
 
 /* Navigation Bar */
@@ -191,11 +194,11 @@ body{
 }
 
 
-
 /* Description */
 .description{
     background-color: black;
-    padding-top: 32px;
+    padding:32px 3rem;
+    padding-bottom: 64px;
 }
 
 .description h2, .description p, .description h3{ 
@@ -211,4 +214,153 @@ body{
 .description .cards-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.desc-container{
+    background-color: #0f0f0f;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+.desc-container .btn-buy{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 16px 48px;
+    border-radius: 28px;
+
+}
+
+.btn-buy a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-buy:hover{
+    cursor: pointer;
+}
+
+.cards-container .card{
+    display: flex;
+    gap: 16px;
+}
+
+/* Finance Calculator */
+.finance-calc{
+    background-color: #f8f8f8;
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.finance-calc .car-type{
+    background-color: #95d3f3;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: black;
+}
+
+.car p, .car h3{
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+
+.finance-calc .finance{
+    background-color: white;
+    padding: 3rem;
+}
+
+
+.finance-calc .finance .inputs-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.inputs-container input{
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding-left: 12px;
+}
+
+/* Check Box */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 48px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+
+.finance-calc .finance button{
+    width: 100%;
+    background-color: #0f0f0f;
+    color: white;
+    font-size: 18px;
+    padding: 12px 0;
+    border-radius: 28px;
+}
+
+.finance-calc .finance button:hover{
+    cursor: pointer;
 }

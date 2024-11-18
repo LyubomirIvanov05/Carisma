@@ -1,3 +1,91 @@
+body{
+    font-family: "Cabin", sans-serif;
+    margin: 0;
+    background-color: white;
+}
+p,h1,h2,h3{
+    font-family: "Cabin", sans-serif;
+}
+
+/* Navigation Bar */
+.navigation{
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+    background-color:  black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0;
+}
+.navigation ul{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li{
+    font-size: 20px;
+}
+
+
+.navigation img{
+    transform: scale(0.5);
+    max-width: 200px;
+    height: auto;
+}
+
+.navigation button{
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    font-weight: normal;
+    color: white;
+}
+
+.user{
+    display: flex;
+    padding: 0;
+    padding-right: 36px;
+}
+
+.navigation .search-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+    box-sizing: border-box; 
+    padding: 0 6px;
+}
+.navigation .search-bar:focus-within{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-bar input{
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+    color: #333333;
+}
+
+.user .nav-divider{
+    width: 2px;
+    background-color: white;
+}
+
 .cards-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
