@@ -154,7 +154,7 @@ p,h1,h2,h3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 12px;
+    gap: 12xpx;
 }
 
 
@@ -345,8 +345,8 @@ display: block;
 }
 
 .container .checkmark:after {
-left: 9px;
-top: 5px;
+left: 6px;
+top: 3px;
 width: 5px;
 height: 10px;
 border: solid white;
