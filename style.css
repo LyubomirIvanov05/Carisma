@@ -16,7 +16,7 @@ p,h1,h2,h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 0;
+    padding: 0.80rem;
 }
 .navigation ul{
     display: flex;
@@ -36,7 +36,7 @@ p,h1,h2,h3{
 
 
 .navigation img{
-    transform: scale(0.5);
+    transform: scale(1);
     max-width: 200px;
     height: auto;
 }
@@ -421,4 +421,37 @@ transform: rotate(45deg);
 
 .signing-up button:hover{
     cursor: pointer;
+}
+
+
+/* Footer */
+.footer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    row-gap: 24px;
+}
+
+.footer .footer-content{
+    justify-self: center;
+}
+
+.footer-content h3{
+    font-size: 22px;
+}
+
+.footer-content a{
+    font-size: 18px;
+    color: #999999;
+}
+
+.footer .footer-icons{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    justify-self: center;
+}
+.footer-icons i{
+    font-size: 18px;
 }
