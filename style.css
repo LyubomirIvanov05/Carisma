@@ -454,4 +454,6 @@ transform: rotate(45deg);
 }
 .footer-icons i{
     font-size: 18px;
+    color: black;
 }
+
