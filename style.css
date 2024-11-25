@@ -26,12 +26,36 @@ p,h1,h2,h3{
 }
 
 .navigation ul li a{
+    position: relative;
     text-decoration: none;
     color: white;
+    overflow: hidden;
+    display: inline-block; /* Needed for the pseudo-element */
+    transition: color 0.3s ease-in-out; /* Optional: smooth color transition */
 }
+
 
 .navigation ul li{
     font-size: 20px;
+}
+
+.navigation ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Start with no underline */
+    height: 2px; /* Set the underline thickness */
+    background-color: white; /* Underline color */
+    transition: width 0.3s ease-in-out; /* Smoothly expand the line */
+}
+
+.navigation ul li a:hover {
+    color: #f6f6f6; /* Optional: change link color on hover */
+}
+
+.navigation ul li a:hover::after {
+    width: 100%; /* Expand underline fully on hover */
 }
 
 
@@ -456,7 +480,7 @@ transform: rotate(45deg);
 
 /* Footer */
 .footer{
-    background-color: white;
+    background-color: #f8f8f8;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2rem;
