@@ -6,7 +6,12 @@ body{
 p,h1,h2,h3{
     font-family: "Cabin", sans-serif;
 }
-
+button{
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
 /* Navigation Bar */
 .navigation{
     z-index: 1000;
@@ -30,8 +35,8 @@ p,h1,h2,h3{
     text-decoration: none;
     color: white;
     overflow: hidden;
-    display: inline-block; /* Needed for the pseudo-element */
-    transition: color 0.3s ease-in-out; /* Optional: smooth color transition */
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
 }
 
 
@@ -44,18 +49,18 @@ p,h1,h2,h3{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 0; /* Start with no underline */
-    height: 2px; /* Set the underline thickness */
-    background-color: white; /* Underline color */
-    transition: width 0.3s ease-in-out; /* Smoothly expand the line */
+    width: 0;
+    height: 2px;
+    background-color: white; 
+    transition: width 0.3s ease-in-out; 
 }
 
 .navigation ul li a:hover {
-    color: #f6f6f6; /* Optional: change link color on hover */
+    color: #f6f6f6;
 }
 
 .navigation ul li a:hover::after {
-    width: 100%; /* Expand underline fully on hover */
+    width: 100%;
 }
 
 
@@ -243,7 +248,10 @@ p,h1,h2,h3{
 .description .cards-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    row-gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 .desc-container{
@@ -253,8 +261,27 @@ p,h1,h2,h3{
     padding: 1rem 2rem;
 }
 
+.desc-container .cards-container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc-container .cards-container .card .card-desc h3,
+.desc-container .cards-container .card .card-desc p{
+    text-align: center;
+}
+
+
+.desc-container .cards-container .card i{
+    font-size: 64px;
+    color: white;
+}
+
 .desc-container .btn-buy{
     display: flex;
+    flex-direction: row; 
     align-self: center;
     justify-self: center;
     padding: 16px 48px;
@@ -264,10 +291,12 @@ p,h1,h2,h3{
 }
 
 .btn-buy a{
+    display: block; /* Make the anchor tag block-level */
+    text-align: center;
     font-size: 18px;
     text-decoration: none;
     color: black;
-    transition:  color 0.3s ease;;
+    transition:  color 0.3s ease;
 }
 
 .btn-buy:hover{
@@ -416,64 +445,98 @@ transform: rotate(45deg);
 
 
 
-/* Signing Up */
-.signing-up{
-    padding: 1rem 12rem;
+/* Contacts */
+.contacts{
+    padding: 2rem;
 }
-.signing-up h3{
+
+.contacts h3{
     color: white;
-    font-size: 36px;
     text-align: center;
+    font-size: 36px;
+    margin-top: 0;
 }
 
-
-.signing-up .signing-cards-container{
+.contacts .contacts-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    gap: 16px;
+    gap: 2rem;
 }
 
-.signing-cards-container p{
+.contacts-container .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+}
+
+.contacts-container .contact i,
+.contacts-container .contact p{
     color: white;
-    font-size: 24px;
-}
-.signing-cards-container .signing-card{
     text-align: center;
+    margin: 1rem 0;
+    font-size: 22px;
 }
 
-.signing-card img{
-    width: 200px;
-    height: auto;
+.contacts-container .chat{
+    justify-content:space-evenly;
 }
 
-.signing-up button{
+.contacts-container .contact i{
+    font-size: 64px;
+}
+
+/* Slide-in underline effect */
+.contacts .phone-number span,
+.contacts .email span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: white; 
+}
+
+.contacts .phone-number span::after,
+.contacts .email span::after {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease-in-out;
+}
+
+.contacts .phone-number span:hover::after,
+.contacts .email span:hover::after {
+    width: 100%; 
+}
+
+
+.contact button{
     display: flex;
     align-self: center;
     justify-self: center;
     padding: 16px 48px;
     border-radius: 28px;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
     border: none;
     transition: box-shadow 0.3s ease;
 }
 
-.signing-up button a{
+.contact button a{
     font-size: 18px;
     text-decoration: none;
     color: black;
     transition: color 0.3s ease;
-
 }
 
-.signing-up button:hover{
+.contact button:hover{
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(255, 100, 0, 1); 
-
 }
 
-.signing-up button:hover a{
+.contact button:hover a{
     color:  rgba(255, 100, 0, 1);
 }
 

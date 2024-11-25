@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <title>Main Page</title>
 </head>
 <body>
@@ -20,7 +16,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="modules.html">Show Room</a></li>
             <li><a href="">Finance</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="About.html">About Us</a></li>
             <li><a href="">Contact</a></li>
         </ul>
         <ul class="user">
@@ -53,33 +49,54 @@
     </section>
 
     <section class="description">
-        <h2 style="color: #50b9eb;">BUY ONLINE.</h2>
-        <h2 style="color: white;">HAVE IT DELIVERED.</h2>
+        <h2 style="color: white;">SHOP NOW.</h2>
+        <h2 style="color: #50b9eb;"> DRIVE TOMORROW.</h2>
 
         <div class="desc-container">
             <h3 style="color: white; text-align: center; font-size: 30px; margin-top: 0;">How does Carisma work?</h3>
             <div class="cards-container">
                 <div class="card">
-                    <img src="images/number_1.png" alt="">
+                    <i class="fa-solid fa-car-on"></i>
                     <div class="card-desc">
-                        <h3 style="font-size: 24px; margin-bottom: 4px;">You're in total control</h3>
-                        <p style="margin-top: 0;">Shop at your own pace and choose from a large selection of new and used vehicles.</p>
+                        <h3 style="font-size: 24px; margin-bottom: 4px;">Drive Your Dream</h3>
+                        <p style="margin-top: 0;">Discover a seamless way to buy or sell the car you’ve always wanted.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/number_2.png" alt="">
+                    <i class="fa-solid fa-cloud"></i>
                     <div class="card-desc">
-                        <h3 style="font-size: 24px; margin-bottom: 4px;">Find the right financing</h3>
-                        <p style="margin-top: 0;">See your actual monthly payment and select the lender that fits you best.</p>
+                        <h3 style="font-size: 24px; margin-bottom: 4px;">Choices Made Easy</h3>
+                        <p style="margin-top: 0;">Browse a wide range of options and find your perfect match effortlessly.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/number_3.png" alt="">
+                    <i class="fa-solid fa-user"></i>
                     <div class="card-desc">
-                        <h3 style="font-size: 24px; margin-bottom: 4px;">Receive your car</h3>
-                        <p style="margin-top: 0;">Schedule delivery (for used cars only) or pickup, to begin enjoying your new ride!</p>
+                        <h3 style="font-size: 24px; margin-bottom: 4px;">Your Car, Your Way</h3>
+                        <p style="margin-top: 0;">Customize your experience with flexible options tailored just for you.</p>
                     </div>
                 </div>
+                <div class="card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="card-desc">
+                        <h3 style="font-size: 24px; margin-bottom: 4px;">Local Deals, Nationwide Reach</h3>
+                        <p style="margin-top: 0;">Find cars near you or explore options across the country with ease.</p>
+                    </div>
+                </div>  
+                <div class="card">
+                    <i class="fa-solid fa-award"></i>
+                    <div class="card-desc">
+                        <h3 style="font-size: 24px; margin-bottom: 4px;">Drive with Confidence, Covered by Warranty</h3>
+                        <p style="margin-top: 0;">Enjoy peace of mind with every car, backed by reliable warranty options.</p>
+                    </div>
+                </div>  
+                <div class="card">
+                    <i class="fa-solid fa-sack-dollar"></i> 
+                    <div class="card-desc">
+                        <h3 style="font-size: 24px; margin-bottom: 4px;">Unbeatable Prices, Unmatched Value</h3>
+                        <p style="margin-top: 0;">Find the best deals tailored to your budget, without compromising quality.</p>
+                    </div>
+                </div>    
             </div>
             <button class="btn-buy"><a href="#">Buy online</a></button>
         </div>
@@ -88,7 +105,7 @@
     <section class="finance-calc">
         <div class="car">
             <p class="car-type">NEW</p>
-            <h3 style="font-size: 36px;">Know your buying power</h3>
+            <h3 style="font-size: 36px;">Discover Your Budget</h3>
             <p style="font-size: 20px;">How much car can you afford? Find out, then see vehicles that match <br> your budget</p>
             <img src="images/bmw-m5.png" alt="">
         </div>
@@ -110,26 +127,29 @@
             <button><a href="#">See your matches</a></button>
         </div>
     </section>
-    <section class="signing-up">
-        <h3>Why Carisma?</h3>
-        <div class="signing-cards-container">
-            <div class="signing-card">
-                <img src="images/shopping-cart.svg" alt="">
-                <p>Transparent pricing</p>
-                <p style="font-size: 16px;">No surprises here. See how <br> much you'll pay on cars <br> you like.</p>
+    <section class="contacts">
+        <h3>Support You Can Count On</h3>
+        <div class="contacts-container">
+            <div class="contact">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>Call Us</p>
+                <p class="phone-number">
+                    <span>0207 535 7491</span>
+                </p>
             </div>
-            <div class="signing-card">
-                <img src="images/tasklist.svg" alt="">
-                <p>Minutes, not hours</p>
-                <p style="font-size: 16px;">Time saving tools to help you <br> find the right car in a snap.</p>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i>
+                <p>Email Us</p>
+                <p class="email">
+                    <span>info@carisma.co.uk</span>
+                </p>
             </div>
-            <div class="signing-card">
-                <img src="images/car.svg" alt="">
-                <p>Shop your way</p>
-                <p style="font-size: 16px;">Your own pace, your own <br> space. Shop online where and <br> when it's convenient for you.</p>
+            <div class="contact chat">
+                <i class="fa-brands fa-rocketchat"></i>
+                <p>Chat with us</p>
+                <button><a href="#">Live chat</a></button>
             </div>
         </div>
-        <button><a href="">Sign up</a></button>
     </section>
     <section class="footer">
         <div class="footer-content">
@@ -162,7 +182,7 @@
         <div class="footer-content">
             <h3>About</h3>
 
-                <p><a href="#">Carisma, Inc</a></p>
+                <p><a href="#">&copy; Carisma, Inc</a></p>
                 <p><a href="#">Team</a></p>
                 <p><a href="#">Careers</a></p>
                 <p><a href="#">Press</a></p>
