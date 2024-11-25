@@ -235,17 +235,24 @@ p,h1,h2,h3{
     justify-self: center;
     padding: 16px 48px;
     border-radius: 28px;
-
+    border: none;
+    transition: box-shadow 0.3s ease;
 }
 
 .btn-buy a{
     font-size: 18px;
     text-decoration: none;
     color: black;
+    transition:  color 0.3s ease;;
 }
 
 .btn-buy:hover{
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(6, 174, 170, 1); 
+}
+
+.btn-buy:hover a{
+    color: rgba(6, 174, 170, 1);
 }
 
 .cards-container .card{
@@ -364,10 +371,23 @@ transform: rotate(45deg);
     font-size: 18px;
     padding: 12px 0;
     border-radius: 28px;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.finance-calc .finance button a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;   
 }
 
 .finance-calc .finance button:hover{
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(236, 0, 139, 1); 
+}
+
+.finance-calc .finance button:hover a{
+    color: rgba(236, 0, 139, 1); 
 }
 
 
@@ -411,16 +431,26 @@ transform: rotate(45deg);
     border-radius: 28px;
     margin-bottom: 3rem;
     margin-top: 2rem;
+    border: none;
+    transition: box-shadow 0.3s ease;
 }
 
 .signing-up button a{
     font-size: 18px;
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease;
+
 }
 
 .signing-up button:hover{
     cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(255, 100, 0, 1); 
+
+}
+
+.signing-up button:hover a{
+    color:  rgba(255, 100, 0, 1);
 }
 
 
@@ -444,6 +474,15 @@ transform: rotate(45deg);
 .footer-content a{
     font-size: 18px;
     color: #999999;
+    text-decoration: none;
+    text-decoration-thickness: 0;
+    transition: text-decoration-thickness 0.3s ease;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
 }
 
 .footer .footer-icons{
