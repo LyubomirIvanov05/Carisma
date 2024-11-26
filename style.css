@@ -254,12 +254,15 @@ button{
     margin-bottom: 1rem;
 }
 
-.desc-container{
+.desc-container {
     background-color: #0f0f0f;
     border-radius: 8px;
     margin-top: 1rem;
     padding: 1rem 2rem;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
 
 .desc-container .cards-container .card{
     display: flex;
