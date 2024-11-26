@@ -1,3 +1,168 @@
-body{
+body {
+    font-family: "Cabin", sans-serif;
+    background-color: rgb(211, 211, 211);
+}
+
+p, h1, h2, h3 {
+    font-family: "Cabin", sans-serif;
+}
+
+/*Styling the image*/
+.About-page img {
+    max-width: 50%; /* Ensure the image doesn't exceed its container's width */
+    height: 30%; /* Keep the aspect ratio of the image */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    object-position: left;
+}
+
+/* Navigation Bar */
+.navigation {
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.80rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation ul li {
+    font-size: 20px;
+}
+
+.navigation ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.navigation ul li a:hover {
+    color: #f6f6f6;
+}
+
+.navigation ul li a:hover::after {
+    width: 100%;
+}
+
+.navigation img {
+    transform: scale(1);
+    max-width: 200px;
+    height: auto;
+}
+
+.navigation button {
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    font-weight: normal;
+    color: white;
+}
+
+.user {
+    display: flex;
+    padding: 0;
+    padding-right: 36px;
+}
+
+.navigation .search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+
+.navigation .search-bar:focus-within {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-bar input {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+    color: #333333;
+}
+
+.user .nav-divider {
+    width: 2px;
     background-color: white;
+}
+
+/* About Page */
+.About-page img {
+    width: 100%;
+}
+
+.About-page .About-desc {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    row-gap: 24px;
+}
+
+.footer .footer-content {
+    justify-self: center;
+}
+
+.footer-content h3 {
+    font-size: 22px;
+}
+
+.footer-content a {
+    font-size: 18px;
+    color: #999999;
+    text-decoration: none;
+    transition: text-decoration-thickness 0.3s ease;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.footer .footer-icons {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    justify-self: center;
+}
+
+.footer-icons i {
+    font-size: 18px;
+    color: black;
 }
