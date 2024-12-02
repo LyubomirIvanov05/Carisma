@@ -294,7 +294,7 @@ button{
 }
 
 .btn-buy a{
-    display: block; /* Make the anchor tag block-level */
+    display: block;
     text-align: center;
     font-size: 18px;
     text-decoration: none;
@@ -318,9 +318,10 @@ button{
 
 /* Finance Calculator */
 .finance-calc{
-    background-color: #f8f8f8;
+    background-color:  rgb(211, 211, 211);
     padding: 3rem 10rem;
     display: grid;
+    gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -339,7 +340,8 @@ button{
 
 
 .finance-calc .finance{
-    background-color: white;
+    background-color: #f8f8f8;
+    border-radius: 8px;
     padding: 3rem;
 }
 
