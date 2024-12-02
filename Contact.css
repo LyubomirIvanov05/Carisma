@@ -1,0 +1,367 @@
+body {
+    font-family: "Cabin", sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+p, h1, h2, h3 {
+    font-family: "Cabin", sans-serif;
+}
+
+/*Styling the image*/
+
+.About-page {
+    display: flex;
+    flex-direction: row;    
+}
+.About-page img {
+    max-width: 50%; /* Ensure the image doesn't exceed its container's width */
+    height: 30%; /* Keep the aspect ratio of the image */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    object-position: left;
+}
+
+/* Navigation Bar */
+.navigation {
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.80rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation ul li {
+    font-size: 20px;
+}
+
+.navigation ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.navigation ul li a:hover {
+    color: #f6f6f6;
+}
+
+.navigation ul li a:hover::after {
+    width: 100%;
+}
+
+.navigation img {
+    transform: scale(1);
+    max-width: 200px;
+    height: auto;
+}
+
+.navigation button {
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    font-weight: normal;
+    color: white;
+}
+
+.user {
+    display: flex;
+    padding: 0;
+    padding-right: 36px;
+}
+
+.navigation .search-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+    transition: box-shadow 0.25s;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+
+.navigation .search-bar:focus-within {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+.search-bar input {
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+    color: #333333;
+}
+
+.user .nav-divider {
+    width: 2px;
+    background-color: white;
+}
+
+/* About Page */
+.About-page img {
+    width: 100%;
+}
+
+.About-page .About-desc {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    row-gap: 24px;
+}
+
+.footer .footer-content {
+    justify-self: center;
+}
+
+.footer-content h3 {
+    font-size: 22px;
+}
+
+.footer-content a {
+    font-size: 18px;
+    color: #999999;
+    text-decoration: none;
+    transition: text-decoration-thickness 0.3s ease;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.footer .footer-icons {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    justify-self: center;
+}
+
+.footer-icons i {
+    font-size: 18px;
+    color: black;
+}
+
+/* Contacts 
+.contacts{
+    padding: 2rem;
+}
+
+.contacts h3{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.contacts .contacts-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contacts-container .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+}
+
+.contacts-container .contact i,
+.contacts-container .contact p{
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 22px;
+}
+
+.contacts-container .chat{
+    justify-content:space-evenly;
+}
+
+.contacts-container .contact i{
+    font-size: 64px;
+}
+
+/* Slide-in underline effect 
+.contacts .phone-number span,
+.contacts .email span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: white; 
+}
+
+.contacts .phone-number span::after,
+.contacts .email span::after {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease-in-out;
+}
+
+.contacts .phone-number span:hover::after,
+.contacts .email span:hover::after {
+    width: 100%; 
+}
+
+
+.contact button{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 16px 48px;
+    border-radius: 28px;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact button a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.contact button:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(255, 100, 0, 1); 
+}
+
+.contact button:hover a{
+    color:  rgba(255, 100, 0, 1);
+}
+
+*/
+
+.Contact-Us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.fa-envelope{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+/* Footer */
+.footer{
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    row-gap: 24px;
+}
+
+.footer .footer-content{
+    justify-self: center;
+}
+
+.footer-content h3{
+    font-size: 22px;
+}
+
+.footer-content a{
+    font-size: 18px;
+    color: #999999;
+    text-decoration: none;
+    text-decoration-thickness: 0;
+    transition: text-decoration-thickness 0.3s ease;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+.footer .footer-icons{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    justify-self: center;
+}
+.footer-icons i{
+    font-size: 18px;
+    color: black;
+}

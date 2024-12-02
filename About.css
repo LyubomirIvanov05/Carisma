@@ -1,6 +1,7 @@
 body {
     font-family: "Cabin", sans-serif;
     background-color: rgb(211, 211, 211);
+    margin: 0;
 }
 
 p, h1, h2, h3 {
@@ -8,6 +9,11 @@ p, h1, h2, h3 {
 }
 
 /*Styling the image*/
+
+.About-page {
+    display: flex;
+    flex-direction: row;    
+}
 .About-page img {
     max-width: 50%; /* Ensure the image doesn't exceed its container's width */
     height: 30%; /* Keep the aspect ratio of the image */
