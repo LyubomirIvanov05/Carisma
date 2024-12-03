@@ -24,7 +24,6 @@ p,h1,h2,h3{
     list-style: none;
     margin: 0;
 }
-
 .navigation ul li a{
     position: relative;
     text-decoration: none;
@@ -142,15 +141,14 @@ p,h1,h2,h3{
 }
 
 .search {
-    --padding: 14px;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: var(--padding);
+    padding: 14px;
     border-radius: 28px;
     background-color: #f6f6f6;
     transition: box-shadow 0.25s;
-    margin-bottom: 32px;
+    margin-bottom: 14px;
     box-sizing: border-box;
 }
 
@@ -189,6 +187,27 @@ p,h1,h2,h3{
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.main-desc .or-container{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.main-desc .or-container div{
+    width: 45%;
+    background-color: white;
+    height: 1px;
+}
+
+.main-desc .or-container p{
+    color: white;
+    padding: 0;
 }
 
 .main-desc button a{

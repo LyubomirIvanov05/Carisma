@@ -1,6 +1,5 @@
 *{
-  margin:0px;
-  padding:0px;
+
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -200,3 +199,48 @@ p,h1,h2,h3{
 .cards-container .card button:hover i{
     color: rgba(236, 0, 139, 1); 
 }
+
+
+/* Footer */
+.footer{
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    row-gap: 24px;
+}
+
+.footer .footer-content{
+    justify-self: center;
+
+}
+
+.footer-content h3{
+    font-size: 22px;
+}
+
+.footer-content a{
+    font-size: 18px;
+    color: #999999;
+    text-decoration: none;
+    text-decoration-thickness: 0;
+    transition: text-decoration-thickness 0.3s ease;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+.footer .footer-icons{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    justify-self: center;
+}
+.footer-icons i{
+    font-size: 18px;
+    color: black;
+}
+
