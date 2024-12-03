@@ -6,12 +6,7 @@ body{
 p,h1,h2,h3{
     font-family: "Cabin", sans-serif;
 }
-button{
-    margin: 0;
-    padding: 0;
-    -webkit-appearance: none;
-    appearance: none;
-}
+
 /* Navigation Bar */
 .navigation{
     z-index: 1000;
