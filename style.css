@@ -179,7 +179,41 @@ button{
     color: rgba(0, 0, 0, 0.5);
 }
 
-.main-page .buttons{
+.main-desc button{
+    width: 100%;
+    background-color: #0f0f0f;
+    color: white;
+    font-size: 18px;
+    padding: 12px 0;
+    border-radius: 28px;
+    border: none;
+    transition: box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.main-desc button a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;   
+}
+
+.main-desc button:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(255, 100, 0, 1); 
+}
+
+.main-desc button:hover a{
+    color: rgba(255, 100, 0, 1); 
+}
+
+
+
+/* .main-page .buttons{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -225,7 +259,7 @@ button{
 }
 .fa-solid.fa-car-battery{
     color: #06aeaa;
-}
+} */
 
 
 /* Description */
