@@ -197,12 +197,17 @@ p,h1,h2,h3{
     transition: color 0.3s ease;   
 }
 
+.main-desc button i{
+    transition: color 0.3s ease;
+}
+
 .main-desc button:hover{
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(255, 100, 0, 1); 
 }
 
-.main-desc button:hover a{
+.main-desc button:hover a,
+.main-desc button:hover i{
     color: rgba(255, 100, 0, 1); 
 }
 

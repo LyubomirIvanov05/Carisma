@@ -192,33 +192,11 @@ p,h1,h2,h3{
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(236, 0, 139, 1); 
 }
+.cards-container .card button:hover i{
+    transition: color 0.3s ease;  
+}
 
-.cards-container .card button:hover a{
+.cards-container .card button:hover a,
+.cards-container .card button:hover i{
     color: rgba(236, 0, 139, 1); 
 }
-/* .finance-calc .finance button{
-    width: 100%;
-    background-color: #0f0f0f;
-    color: white;
-    font-size: 18px;
-    padding: 12px 0;
-    border-radius: 28px;
-    border: none;
-    transition: box-shadow 0.3s ease;
-}
-
-.finance-calc .finance button a{
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;   
-}
-
-.finance-calc .finance button:hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(236, 0, 139, 1); 
-}
-
-.finance-calc .finance button:hover a{
-    color: rgba(236, 0, 139, 1); 
-} */
-
