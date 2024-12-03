@@ -1,5 +1,5 @@
 *{
- margin:0px;
+  margin:0px;
   padding:0px;
   box-sizing: border-box;
   font-family: sans-serif;
@@ -38,8 +38,8 @@ p,h1,h2,h3{
     text-decoration: none;
     color: white;
     overflow: hidden;
-    display: inline-block; /* Needed for the pseudo-element */
-    transition: color 0.3s ease-in-out; /* Optional: smooth color transition */
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
 }
 
 
@@ -52,18 +52,18 @@ p,h1,h2,h3{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 0; /* Start with no underline */
-    height: 2px; /* Set the underline thickness */
-    background-color: white; /* Underline color */
-    transition: width 0.3s ease-in-out; /* Smoothly expand the line */
+    width: 0;
+    height: 2px;
+    background-color: white; 
+    transition: width 0.3s ease-in-out; 
 }
 
 .navigation ul li a:hover {
-    color: #f6f6f6; /* Optional: change link color on hover */
+    color: #f6f6f6;
 }
 
 .navigation ul li a:hover::after {
-    width: 100%; /* Expand underline fully on hover */
+    width: 100%;
 }
 
 
@@ -117,7 +117,6 @@ p,h1,h2,h3{
     width: 2px;
     background-color: white;
 }
-
 
 
 .cards-container{

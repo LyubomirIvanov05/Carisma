@@ -31,25 +31,24 @@ p, h1, h2, h3 {
 }
 
 /* Navigation Bar */
-.navigation {
+.navigation{
     z-index: 1000;
     top: 0;
     position: sticky;
-    background-color: black;
+    background-color:  black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.80rem;
 }
-
-.navigation ul {
+.navigation ul{
     display: flex;
     gap: 24px;
     list-style: none;
     margin: 0;
 }
 
-.navigation ul li a {
+.navigation ul li a{
     position: relative;
     text-decoration: none;
     color: white;
@@ -58,7 +57,8 @@ p, h1, h2, h3 {
     transition: color 0.3s ease-in-out;
 }
 
-.navigation ul li {
+
+.navigation ul li{
     font-size: 20px;
 }
 
@@ -81,13 +81,14 @@ p, h1, h2, h3 {
     width: 100%;
 }
 
-.navigation img {
+
+.navigation img{
     transform: scale(1);
     max-width: 200px;
     height: auto;
 }
 
-.navigation button {
+.navigation button{
     font-size: 18px;
     border: none;
     background-color: transparent;
@@ -95,29 +96,31 @@ p, h1, h2, h3 {
     color: white;
 }
 
-.user {
+.user{
     display: flex;
     padding: 0;
     padding-right: 36px;
 }
 
-.navigation .search-bar {
+.navigation .search-bar{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-items: center;
     border-radius: 28px;
     background-color: #f6f6f6;
     transition: box-shadow 0.25s;
+    box-sizing: border-box; 
     padding: 0 6px;
-    box-sizing: border-box;
 }
-
-.navigation .search-bar:focus-within {
+.navigation .search-bar:focus-within{
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
 }
 
-.search-bar input {
+.search-bar input{
     font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    margin-left: var(--padding);
     outline: none;
     border: none;
     background: transparent;
@@ -125,7 +128,7 @@ p, h1, h2, h3 {
     color: #333333;
 }
 
-.user .nav-divider {
+.user .nav-divider{
     width: 2px;
     background-color: white;
 }
