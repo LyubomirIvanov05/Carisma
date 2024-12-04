@@ -18,6 +18,7 @@ p,h1,h2,h3{
     align-items: center;
     padding: 0.80rem;
 }
+
 .navigation ul{
     display: flex;
     gap: 24px;
@@ -222,63 +223,15 @@ p,h1,h2,h3{
 
 .main-desc button:hover{
     cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(255, 100, 0, 1); 
+    /* box-shadow: 0px 4px 6px rgba(255, 100, 0, 1);  */
+    box-shadow: 0px 4px 6px rgba(6, 174, 170, 1); 
 }
 
 .main-desc button:hover a,
 .main-desc button:hover i{
-    color: rgba(255, 100, 0, 1); 
+    /* color: rgba(255, 100, 0, 1);  */
+    color: rgba(6, 174, 170, 1); 
 }
-
-
-
-/* .main-page .buttons{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 12xpx;
-}
-
-
-.main-page .buttons button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    background: transparent;
-    backdrop-filter: blur(5px);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    border: 1px solid #f8f8f8;
-    width: 150px;
-    height: 125px;
-}
-
-.main-page .buttons button:hover{
-    cursor: pointer;
-}
-
-.main-page .buttons a{
-    text-decoration: none;
-}
-
-.main-page .buttons i{
-    font-size: 40px;
-}
-
-.fa-solid.fa-car {
-    color: #ff6400;
-}
-.fa-solid.fa-tag{
-    color: #ec008b;
-}
-.fa-solid.fa-car-battery{
-    color: #06aeaa;
-} */
 
 
 /* Description */
@@ -618,7 +571,7 @@ transform: rotate(45deg);
 
 .footer-content a{
     font-size: 18px;
-    color: #999999;
+    color: #575757;
     text-decoration: none;
     text-decoration-thickness: 0;
     transition: text-decoration-thickness 0.3s ease;
