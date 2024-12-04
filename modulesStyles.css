@@ -1,4 +1,3 @@
-
 body{
     font-family: "Cabin", sans-serif;
     margin: 0;
@@ -195,13 +194,13 @@ p,h1,h2,h3{
     text-decoration: none;
     transition: color 0.3s ease;  
 }
+.cards-container .card button i{
+    transition: color 0.3s ease;  
+}
 
 .cards-container .card button:hover{
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(236, 0, 139, 1); 
-}
-.cards-container .card button:hover i{
-    transition: color 0.3s ease;  
 }
 
 .cards-container .card button:hover a,
