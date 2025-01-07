@@ -8,38 +8,57 @@ p, h1, h2, h3 {
     font-family: "Cabin", sans-serif;
 }
 
-/*Styling the image*/
-
+/* Styling the image */
 .About-page {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    align-items: center; /* Ensure the content aligns properly */
+    padding: 20px; /* Add some spacing around the content */
 }
+
 .About-page img {
     max-width: 50%; /* Ensure the image doesn't exceed its container's width */
-    height: 30%; /* Keep the aspect ratio of the image */
+    height: auto; /* Maintain the aspect ratio */
     flex-shrink: 0; /* Prevent the image from shrinking */
+    object-fit: cover; /* Ensure the image fills its container without distortion */
     object-position: left;
+    border-radius: 10px; /* Add rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* About Description */
+.About-page .About-desc {
+    flex: 1; /* Allow the description to take up the remaining space */
+    padding: 20px 40px; /* Add spacing around the text */
+    color: #333; /* Use a darker color for readability */
+    background: rgba(255, 255, 255, 0.9); /* Add a translucent white background */
+    border-radius: 10px; /* Match the rounded corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow for consistency */
+    text-align: justify; /* Justify the text for a clean look */
+    font-size: 18px; /* Increase the font size for better readability */
+    line-height: 1.8; /* Add spacing between lines for readability */
 }
 
 /* Navigation Bar */
-.navigation{
+.navigation {
     z-index: 1000;
     top: 0;
     position: sticky;
-    background-color:  black;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.80rem;
 }
-.navigation ul{
+
+.navigation ul {
     display: flex;
     gap: 24px;
     list-style: none;
     margin: 0;
 }
 
-.navigation ul li a{
+.navigation ul li a {
     position: relative;
     text-decoration: none;
     color: white;
@@ -48,8 +67,7 @@ p, h1, h2, h3 {
     transition: color 0.3s ease-in-out;
 }
 
-
-.navigation ul li{
+.navigation ul li {
     font-size: 20px;
 }
 
@@ -60,8 +78,8 @@ p, h1, h2, h3 {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: white; 
-    transition: width 0.3s ease-in-out; 
+    background-color: white;
+    transition: width 0.3s ease-in-out;
 }
 
 .navigation ul li a:hover {
@@ -72,14 +90,13 @@ p, h1, h2, h3 {
     width: 100%;
 }
 
-
-.navigation img{
+.navigation img {
     transform: scale(1);
     max-width: 200px;
     height: auto;
 }
 
-.navigation button{
+.navigation button {
     font-size: 18px;
     border: none;
     background-color: transparent;
@@ -87,51 +104,10 @@ p, h1, h2, h3 {
     color: white;
 }
 
-.user{
+.user {
     display: flex;
     padding: 0;
     padding-right: 36px;
-}
-
-.navigation .search-bar{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    border-radius: 28px;
-    background-color: #f6f6f6;
-    transition: box-shadow 0.25s;
-    box-sizing: border-box; 
-    padding: 0 6px;
-}
-.navigation .search-bar:focus-within{
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
-}
-
-.search-bar input{
-    font-size: 16px;
-    font-family: 'Lexend', sans-serif;
-    margin-left: var(--padding);
-    outline: none;
-    border: none;
-    background: transparent;
-    flex: 1;
-    color: #333333;
-}
-
-.user .nav-divider{
-    width: 2px;
-    background-color: white;
-}
-/* About Page */
-.About-page img {
-    width: 100%;
-}
-
-.About-page .About-desc {
-    text-align: center;
-    padding: 20px;
-    color: white;
 }
 
 /* Footer */
